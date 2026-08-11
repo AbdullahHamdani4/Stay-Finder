@@ -5,3 +5,14 @@
   background-size: cover;
    background-position: center;
    }
+
+   /* @media (min-width:1196px){
+    .popularDestination{
+        justify-content: center;
+    }
+   }
+   @media (min-width:1400px){
+    .featuredStay{
+        justify-content: center;
+    }
+   } */

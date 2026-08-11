@@ -258,4 +258,4 @@ const footerData = [
     description: "We're here whenever\nyou need us."
   }
 ];
-export { popularDestinationsData, featuredStaysData, footerData}
+export { popularDestinationsData, featuredStaysData, footerData }
