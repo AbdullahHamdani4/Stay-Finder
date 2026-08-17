@@ -1,75 +1,90 @@
 const popularDestinationsData = [
   {
+    id: 1,
     name: "Hunza",
     pic: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=600&h=600&fit=crop",
     stays: 120
   },
   {
+    id: 2,
     name: "Skardu",
     pic: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600&h=600&fit=crop",
     stays: 85
   },
   {
+    id: 3,
     name: "Murree",
     pic: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&h=600&fit=crop",
     stays: 60
   },
   {
+    id: 4,
     name: "Swat",
     pic: "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=600&h=600&fit=crop",
     stays: 45
   },
   {
+    id: 5,
     name: "Karachi",
     pic: "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=600&h=600&fit=crop",
     stays: 90
   },
   {
+    id: 6,
     name: "Islamabad",
     pic: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=600&h=600&fit=crop",
     stays: 70
   },
   {
+    id: 7,
     name: "Lahore",
     pic: "https://images.unsplash.com/photo-1518005020951-eccb494ad742?w=600&h=600&fit=crop",
     stays: 110
   },
   {
+    id: 8,
     name: "Nathia Gali",
     pic: "https://images.unsplash.com/photo-1464278533981-50106e6176b1?w=600&h=600&fit=crop",
     stays: 52
   },
   {
+    id: 9,
     name: "Chitral",
     pic: "https://images.unsplash.com/photo-1500534623283-312aade485b7?w=600&h=600&fit=crop",
     stays: 38
   },
   {
+    id: 10,
     name: "Kaghan",
     pic: "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=600&h=600&fit=crop",
     stays: 42
   },
   {
+    id: 11,
     name: "Neelum Valley",
     pic: "https://images.unsplash.com/photo-1500534623283-312aade485b7?w=600&h=600&fit=crop",
     stays: 35
   },
   {
+    id: 12,
     name: "Fairy Meadows",
     pic: "https://images.unsplash.com/photo-1464278533981-50106e6176b1?w=600&h=600&fit=crop",
     stays: 28
   },
   {
+    id: 13,
     name: "Gwadar",
     pic: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&h=600&fit=crop",
     stays: 32
   },
   {
+    id: 14,
     name: "Ziarat",
     pic: "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=600&h=600&fit=crop",
     stays: 25
   },
   {
+    id: 15,
     name: "Kalam",
     pic: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&h=600&fit=crop",
     stays: 48
@@ -78,7 +93,6 @@ const popularDestinationsData = [
 
 
  const featuredStaysData = [
-  // ==================== HUNZA ====================
   {
     id: 1,
     name: "The Alpine House",
@@ -90,7 +104,7 @@ const popularDestinationsData = [
     beds: 3,
     baths: 2,
     guests: 6,
-    price: "18,500"
+    price: "18500"
   },
   {
     id: 2,
@@ -103,7 +117,7 @@ const popularDestinationsData = [
     beds: 2,
     baths: 1,
     guests: 3,
-    price: "12,000"
+    price: "12000"
   },
   {
     id: 3,
@@ -116,7 +130,7 @@ const popularDestinationsData = [
     beds: 3,
     baths: 2,
     guests: 8,
-    price: "32,000"
+    price: "32000"
   },
 
   // ==================== SKARDU ====================
@@ -131,7 +145,7 @@ const popularDestinationsData = [
     beds: 3,
     baths: 2,
     guests: 5,
-    price: "21,500"
+    price: "21500"
   },
   {
     id: 5,
@@ -144,7 +158,7 @@ const popularDestinationsData = [
     beds: 2,
     baths: 1,
     guests: 2,
-    price: "8,500"
+    price: "8500"
   },
   {
     id: 6,
@@ -157,7 +171,7 @@ const popularDestinationsData = [
     beds: 3,
     baths: 2,
     guests: 7,
-    price: "28,500"
+    price: "28500"
   },
 
   // ==================== MURREE ====================
@@ -172,7 +186,7 @@ const popularDestinationsData = [
     beds: 2,
     baths: 1,
     guests: 4,
-    price: "15,500"
+    price: "15500"
   },
   {
     id: 8,
@@ -185,7 +199,7 @@ const popularDestinationsData = [
     beds: 3,
     baths: 2,
     guests: 8,
-    price: "37,500"
+    price: "37500"
   },
   {
     id: 9,
@@ -198,7 +212,7 @@ const popularDestinationsData = [
     beds: 2,
     baths: 1,
     guests: 2,
-    price: "7,000"
+    price: "7000"
   },
 
   // ==================== SWAT ====================
@@ -213,7 +227,7 @@ const popularDestinationsData = [
     beds: 2,
     baths: 1,
     guests: 6,
-    price: "17,500"
+    price: "17500"
   },
   {
     id: 11,
@@ -226,7 +240,7 @@ const popularDestinationsData = [
     beds: 3,
     baths: 2,
     guests: 4,
-    price: "13,000"
+    price: "13000"
   },
   {
     id: 12,
@@ -239,7 +253,7 @@ const popularDestinationsData = [
     beds: 2,
     baths: 1,
     guests: 3,
-    price: "9,500"
+    price: "9500"
   },
 
   // ==================== KARACHI ====================
@@ -254,7 +268,7 @@ const popularDestinationsData = [
     beds: 3,
     baths: 2,
     guests: 7,
-    price: "26,500"
+    price: "26500"
   },
   {
     id: 14,
@@ -267,7 +281,7 @@ const popularDestinationsData = [
     beds: 2,
     baths: 2,
     guests: 4,
-    price: "14,500"
+    price: "14500"
   },
   {
     id: 15,
@@ -280,7 +294,7 @@ const popularDestinationsData = [
     beds: 2,
     baths: 1,
     guests: 2,
-    price: "6,500"
+    price: "6500"
   },
 
   // ==================== ISLAMABAD ====================
@@ -295,7 +309,7 @@ const popularDestinationsData = [
     beds: 4,
     baths: 3,
     guests: 8,
-    price: "45,000"
+    price: "45000"
   },
   {
     id: 17,
@@ -308,7 +322,7 @@ const popularDestinationsData = [
     beds: 3,
     baths: 2,
     guests: 5,
-    price: "22,500"
+    price: "22500"
   },
   {
     id: 18,
@@ -321,7 +335,7 @@ const popularDestinationsData = [
     beds: 2,
     baths: 2,
     guests: 3,
-    price: "16,000"
+    price: "16000"
   },
 
   // ==================== LAHORE ====================
@@ -336,7 +350,7 @@ const popularDestinationsData = [
     beds: 3,
     baths: 2,
     guests: 6,
-    price: "24,500"
+    price: "24500"
   },
   {
     id: 20,
@@ -349,7 +363,7 @@ const popularDestinationsData = [
     beds: 2,
     baths: 2,
     guests: 4,
-    price: "18,000"
+    price: "18000"
   },
   {
     id: 21,
@@ -362,7 +376,7 @@ const popularDestinationsData = [
     beds: 3,
     baths: 2,
     guests: 7,
-    price: "29,500"
+    price: "29500"
   },
 
   // ==================== NATHIA GALI ====================
@@ -377,7 +391,7 @@ const popularDestinationsData = [
     beds: 3,
     baths: 2,
     guests: 5,
-    price: "20,000"
+    price: "20000"
   },
   {
     id: 23,
@@ -390,7 +404,7 @@ const popularDestinationsData = [
     beds: 2,
     baths: 1,
     guests: 3,
-    price: "11,500"
+    price: "11500"
   },
   {
     id: 24,
@@ -403,7 +417,7 @@ const popularDestinationsData = [
     beds: 3,
     baths: 2,
     guests: 8,
-    price: "34,500"
+    price: "34500"
   },
 
   // ==================== CHITRAL ====================
@@ -418,7 +432,7 @@ const popularDestinationsData = [
     beds: 3,
     baths: 2,
     guests: 6,
-    price: "19,000"
+    price: "19000"
   },
   {
     id: 26,
@@ -431,7 +445,7 @@ const popularDestinationsData = [
     beds: 2,
     baths: 1,
     guests: 2,
-    price: "5,000"
+    price: "5000"
   },
   {
     id: 27,
@@ -444,7 +458,7 @@ const popularDestinationsData = [
     beds: 3,
     baths: 2,
     guests: 7,
-    price: "27,500"
+    price: "27500"
   },
 
   // ==================== KAGHAN ====================
@@ -459,7 +473,7 @@ const popularDestinationsData = [
     beds: 2,
     baths: 1,
     guests: 4,
-    price: "10,500"
+    price: "10500"
   },
   {
     id: 29,
@@ -472,7 +486,7 @@ const popularDestinationsData = [
     beds: 3,
     baths: 2,
     guests: 8,
-    price: "38,000"
+    price: "38000"
   },
   {
     id: 30,
@@ -485,7 +499,7 @@ const popularDestinationsData = [
     beds: 2,
     baths: 1,
     guests: 3,
-    price: "9,000"
+    price: "9000"
   },
 
   // ==================== NEELUM VALLEY ====================
@@ -500,7 +514,7 @@ const popularDestinationsData = [
     beds: 4,
     baths: 2,
     guests: 8,
-    price: "90,000"
+    price: "90000"
   },
   {
     id: 32,
@@ -513,7 +527,7 @@ const popularDestinationsData = [
     beds: 3,
     baths: 2,
     guests: 5,
-    price: "23,500"
+    price: "23500"
   },
   {
     id: 33,
@@ -526,7 +540,7 @@ const popularDestinationsData = [
     beds: 2,
     baths: 1,
     guests: 2,
-    price: "7,500"
+    price: "7500"
   },
 
   // ==================== FAIRY MEADOWS ====================
@@ -541,7 +555,7 @@ const popularDestinationsData = [
     beds: 2,
     baths: 1,
     guests: 4,
-    price: "14,500"
+    price: "14500"
   },
   {
     id: 35,
@@ -554,7 +568,7 @@ const popularDestinationsData = [
     beds: 3,
     baths: 1,
     guests: 6,
-    price: "26,000"
+    price: "26000"
   },
   {
     id: 36,
@@ -567,7 +581,7 @@ const popularDestinationsData = [
     beds: 2,
     baths: 1,
     guests: 3,
-    price: "12,500"
+    price: "12500"
   },
 
   // ==================== GWADAR ====================
@@ -582,7 +596,7 @@ const popularDestinationsData = [
     beds: 2,
     baths: 2,
     guests: 5,
-    price: "22,000"
+    price: "22000"
   },
   {
     id: 38,
@@ -595,7 +609,7 @@ const popularDestinationsData = [
     beds: 3,
     baths: 2,
     guests: 8,
-    price: "42,000"
+    price: "42000"
   },
   {
     id: 39,
@@ -608,7 +622,7 @@ const popularDestinationsData = [
     beds: 2,
     baths: 1,
     guests: 2,
-    price: "6,000"
+    price: "6000"
   },
 
   // ==================== ZIARAT ====================
@@ -623,7 +637,7 @@ const popularDestinationsData = [
     beds: 2,
     baths: 1,
     guests: 3,
-    price: "8,000"
+    price: "8000"
   },
   {
     id: 41,
@@ -636,7 +650,7 @@ const popularDestinationsData = [
     beds: 3,
     baths: 2,
     guests: 7,
-    price: "25,000"
+    price: "25000"
   },
   {
     id: 42,
@@ -649,7 +663,7 @@ const popularDestinationsData = [
     beds: 2,
     baths: 1,
     guests: 4,
-    price: "13,500"
+    price: "13500"
   },
 
   // ==================== KALAM ====================
@@ -664,7 +678,7 @@ const popularDestinationsData = [
     beds: 3,
     baths: 2,
     guests: 6,
-    price: "20,500"
+    price: "20500"
   },
   {
     id: 44,
@@ -677,7 +691,7 @@ const popularDestinationsData = [
     beds: 2,
     baths: 1,
     guests: 2,
-    price: "5,000"
+    price: "5000"
   },
   {
     id: 45,
@@ -690,7 +704,7 @@ const popularDestinationsData = [
     beds: 3,
     baths: 2,
     guests: 8,
-    price: "35,000"
+    price: "35000"
   }
 ];
 
@@ -716,5 +730,31 @@ const footerData = [
     description: "We're here whenever\nyou need us."
   }
 ];
-const  guestList=[2,3,4,5,6,7,8]
+const  guestList=["Any",2,3,4,5,6,7,8]
 export { popularDestinationsData, featuredStaysData, footerData, guestList}
+
+
+//  return(
+    //  <div className={`featuredStay flex gap-${gapVal} overflow-x-hidden popular-scroll pb-3 pt-3 ${wrapVal} ${justifyVal}`}>
+    //          {featuredStaysData.filter((each)=>{
+    //             destination.toLowerCase() === "any-destination"? true: destination.toLowerCase() === each.location && each.price>=minPrice && each.price <=maxPrice && guests.toLowerCase() === "any"?true: guests == each.guests
+    //          })}
+    //     </div>
+    //  )
+
+    // if (destination.toLowerCase() == "any-destination" && filter) {
+    //     return <div className={`featuredStay flex gap-${gapVal} overflow-x-hidden popular-scroll pb-3 pt-3 ${wrapVal} ${justifyVal}`}>
+    //         {featuredStaysData.map(each => <Card key={each.id} {...each} />)}
+    //     </div>
+    // }
+
+    //  else {
+    //     return <div className={`featuredStay flex gap-${gapVal} overflow-x-hidden popular-scroll pb-3 pt-3 ${wrapVal} ${justifyVal}`}>
+    //         {featuredStaysData.filter(
+    //             (each) => {destination.toLowerCase() === each.location.toLowerCase()})
+    //             .map(each => <Card key={each.id} {...each} />)
+    //         }
+    //     </div>
+
+
+    //     }

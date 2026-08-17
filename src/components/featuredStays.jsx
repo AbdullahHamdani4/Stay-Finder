@@ -8,27 +8,33 @@ function FeaturedStays(params) {
             <section className=" flex flex-col  ">
                 <div className=" font-playfair text-[#18201D] text-center flex justify-between px-1 items-center">
                     <span className="text-[18px] sm:text-[26px] font-semibold">Featured Stays</span>
-                    <span className="text-xs sm:text-[14px] hover:cursor-pointer">View All <i class="fa-solid fa-arrow-right"></i></span>
+                    <span className="text-xs sm:text-[14px] hover:cursor-pointer">View All <i className="fa-solid fa-arrow-right"></i></span>
                 </div>
-                <MappedCards filter={""} wrapVal={"flex-nowrap"} gapVal={5} justifyVal={"justify-start"} />
+                <MappedCards filter={{ destination: "any-destination", }} wrapVal={"flex-nowrap"} gapVal={5} justifyVal={"justify-start"} />
             </section>
         </div>
     )
 }
-function MappedCards({ filter, wrapVal, gapVal, justifyVal }) {
-    if (filter) {
-       return (
-         <div className={`featuredStay flex gap-${gapVal} overflow-x-hidden popular-scroll pb-3 pt-3 ${wrapVal} ${justifyVal}`}>
-                {featuredStaysData.filter(each => filter.toLowerCase() === each.location.toLowerCase()).map(each => <Card key={each.id} {...each} />)}
-            </div>
-       )
-    } else {
-        return (
-            <div className={`featuredStay flex gap-${gapVal} overflow-x-hidden popular-scroll pb-3 pt-3 ${wrapVal} ${justifyVal}`}>
-                {featuredStaysData.map(each => <Card key={each.id} {...each} />)}
-            </div>
-        )
-    }
+function MappedCards({ filter, sort, wrapVal, gapVal, justifyVal }) {
+    const { destination, minPrice, maxPrice, guests, } = filter
+    let cards = featuredStaysData.filter((each) => {
+        let destinationCheck = destination.toLowerCase() === "any-destination" ? true : destination.toLowerCase() === each.location.toLowerCase() ? true : false;
+        let minPriceCheck = Number(each.price) >= minPrice;
+        let maxPriceCheck = Number(each.price) <= maxPrice;
+        let guestsCheck = guests.toLowerCase() === "any guest" ? true : Number(guests) == each.guests ? true : false;
+        return destinationCheck && minPriceCheck && maxPriceCheck && guestsCheck
+    }).map(each => <Card key={each.id} {...each} />)
+
+    return (
+        <div className={`featuredStay flex gap-${gapVal} overflow-x-hidden popular-scroll pb-3 pt-3 ${wrapVal} ${justifyVal}`}>{sort.toLowerCase() === "recommended" ? cards : sort.toLowerCase() === "low" ? cards.sort((a, b) => a.props.price - b.props.price) : sort.toLowerCase() === "high" ? cards.sort((a, b) => b.props.price - a.props.price) : ""}</div>
+    )
+
+
+
+
+
+
+
 
 }
 
