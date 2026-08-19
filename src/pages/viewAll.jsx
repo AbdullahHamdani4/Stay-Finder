@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import "../App.css"
-import { MappedCards } from "./featuredStays.jsx"
-import ViewMoreHeader from './viewMoreHeader.jsx'
-import FilterBar from './filterBar.jsx'
-import SortDropDown from './sortDropDown.jsx'
+import { MappedCards } from "../components/featuredStays.jsx"
+import ViewMoreHeader from '../components/viewMoreHeader.jsx'
+import FilterBar from '../components/filterBar.jsx'
+import SortDropDown from '../components/sortDropDown.jsx'
 
 const viewAll = () => {
     const [sortValue,setSortValue]=useState("Recommended")
@@ -12,7 +12,6 @@ const viewAll = () => {
         minPrice: 5000,
         maxPrice: 90000,
         guests: "Any guest",
-         
     });
     const valueFromFilterDestination = (value) => {
         setDestination(value)

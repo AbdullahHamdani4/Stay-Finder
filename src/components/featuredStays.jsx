@@ -1,16 +1,17 @@
 import Card from "./featuredStayCard.jsx"
 import { featuredStaysData } from "../data/data.js"
 import "../App.css"
-
+import { Link, Navigate, useNavigate, useNavigation } from 'react-router-dom'
 function FeaturedStays(params) {
     return (
         <div className="px-5 py-8  ">
             <section className=" flex flex-col  ">
                 <div className=" font-playfair text-[#18201D] text-center flex justify-between px-1 items-center">
                     <span className="text-[18px] sm:text-[26px] font-semibold">Featured Stays</span>
-                    <span className="text-xs sm:text-[14px] hover:cursor-pointer">View All <i className="fa-solid fa-arrow-right"></i></span>
+                    <Link className="text-xs sm:text-[14px] hover:cursor-pointer" to="/ViewAll">View All <i className="fa-solid fa-arrow-right"></i></Link>
                 </div>
-                <MappedCards filter={{ destination: "any-destination", }} wrapVal={"flex-nowrap"} gapVal={5} justifyVal={"justify-start"} />
+                <MappedCards filter={{
+                    destination: "Any-Destination", minPrice: 5000, maxPrice: 90000, guests: "Any guest",}} sort={"Recommended"} wrapVal={"flex-nowrap"} gapVal={5} justifyVal={"justify-start"} />
             </section>
         </div>
     )

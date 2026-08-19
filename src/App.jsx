@@ -1,22 +1,26 @@
-import Navbar from "./components/Navbar.jsx"
-import HeroSection from "./components/hero.jsx"
-import PopularDestinations from "./components/popularDestination.jsx"
-import {FeaturedStays} from "./components/featuredStays.jsx"
-import Footer from "./components/footer.jsx"
-import ViewAll from "./components/viewAll.jsx"
+import Home from "./pages/Home.jsx"
+import ViewAll from "./pages/viewAll.jsx"
+import Login from "./pages/Login.jsx"
+import ListProperties from "./pages/ListProperties.jsx"
 import './App.css'
-
+import { BrowserRouter, Route, Routes,} from "react-router-dom"
 function App() {
   return (
 
   
   <>
-  {/* <Navbar/>
-  <HeroSection/>
-  <PopularDestinations/>
-  <FeaturedStays/>
-  <Footer/> */}
-  <ViewAll/>
+  <BrowserRouter>
+  <Routes>
+
+    <Route path="/" element={<Login/>}></Route>
+    <Route path="/Home" element={<Home/>}></Route>
+    <Route path="/ViewAll" element={<ViewAll/>}></Route>
+    <Route path="/ListProperties" element={<ListProperties/>}></Route>
+  </Routes>
+  </BrowserRouter>
+  
+  {/* <ViewAll/> */}
+  {/* <Login/> */}
   </>
   )
 }
