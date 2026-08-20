@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 import "../App.css"
 import { MappedCards } from "../components/featuredStays.jsx"
 import ViewMoreHeader from '../components/viewMoreHeader.jsx'
@@ -13,12 +13,12 @@ const viewAll = () => {
         maxPrice: 90000,
         guests: "Any guest",
     });
-    const valueFromFilterDestination = (value) => {
+    const valueFromFilterDestination =  useCallback((value) => {
         setDestination(value)
-    }
-    const valueFromSortDropDown=(value)=>{
+    },[])
+    const valueFromSortDropDown=useCallback((value)=>{
        setSortValue(value)
-    }
+    },[])
 
     return (
         <main className="min-h-screen bg-[#F8F7F3] px-6 py-10 text-[#18201D] lg:px-12">
