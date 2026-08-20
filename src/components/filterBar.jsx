@@ -2,11 +2,14 @@ import React, { useEffect, useState } from 'react'
 import { popularDestinationsData } from '../data/data'
 import { guestList } from '../data/data'
 import PriceRange from './priceRange'
-const filterBar = ({ destinationSend }) => {
+import { memo } from 'react';
+
+const filterBar = memo(({ destinationSend }) => {
   const [destination, setDestination] = useState("Any-Destination");
   const [minPrice, setMinPrice] = useState(5000);
   const [maxPrice, setMaxPrice] = useState(90000);
   const [guests, setGuests] = useState("Any Guest");
+ console.log("Hello");
  
   const onData = (minVal, maxVal) => {
     setMinPrice(minVal)
@@ -130,6 +133,6 @@ const filterBar = ({ destinationSend }) => {
       </div>
     </div>
   )
-}
+})
 
 export default filterBar
