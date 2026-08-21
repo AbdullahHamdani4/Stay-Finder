@@ -13,7 +13,7 @@ function Navbar() {
         </ul>
     </div>
     <div>
-        <button className="bg-[#0D3026] text-white font-inter font-semibold text-[12px] rounded-[8px] py-2 px-2.5 md:py-2.5 md:px-3 cursor-pointer" onClick={(()=>navigate("/ListProperties"))}>List your property</button>
+        <button className="bg-[#0D3026] text-white font-inter font-semibold text-[12px] rounded-[8px] py-2 px-2.5 md:py-2.5 md:px-3 cursor-pointer" >List your property</button>
     </div>
   </header>
     )
@@ -21,3 +21,4 @@ function Navbar() {
 }
 
 export default Navbar
+// onClick={(()=>navigate("/ListProperties"))}

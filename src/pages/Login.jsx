@@ -18,8 +18,8 @@ const Login = () => {
               navigate("/Home")             
             }
           }>
-            <div className='w-full'><label className='text-[18px]'>Email</label><Input placeholder={"Email/Username"} type={"email"} name="email" /></div>
-            <div><label className='text-[18px]'>Password</label><Input placeholder={"Password"} type={"password"} name="password" /></div>
+            <div className='w-full'><label className='text-[18px]'>Email</label><Input placeholder={"Enter any email to login"} type={"email"} name="email" /></div>
+            <div><label className='text-[18px]'>Password</label><Input placeholder={"Enter any email to password"} type={"password"} name="password" /></div>
             <button className="bg-[#0D3026] text-white font-inter font-semibold text-base rounded-[8px] py-2 w-[80%]">Login</button>
           </form>
         </div>

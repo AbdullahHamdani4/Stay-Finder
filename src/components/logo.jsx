@@ -1,5 +1,6 @@
 import React from 'react'
 import logoImg from "../assets/logo.png";
+import logoLoginImg from "../assets/logoLogin.png";
 const logo = ({textSize,logo,textColor}) => {
   
   return (

@@ -1,9 +1,7 @@
 import React from 'react'
 import { memo } from 'react';
 
-const sortDropDown =memo(({sortValueSend}) => {
-  console.log("sort function ==>");
-  
+const sortDropDown =memo(({sortValueSend}) => {  
   return (
       <div className="mt-5 flex flex-col items-end">
            <div className="flex shrink-0 items-center gap-3">

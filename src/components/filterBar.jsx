@@ -8,9 +8,7 @@ const filterBar = memo(({ destinationSend }) => {
   const [destination, setDestination] = useState("Any-Destination");
   const [minPrice, setMinPrice] = useState(5000);
   const [maxPrice, setMaxPrice] = useState(90000);
-  const [guests, setGuests] = useState("Any Guest");
- console.log("Hello");
- 
+  const [guests, setGuests] = useState("Any Guest"); 
   const onData = (minVal, maxVal) => {
     setMinPrice(minVal)
     setMaxPrice(maxVal)
