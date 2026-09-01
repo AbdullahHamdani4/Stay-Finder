@@ -1,6 +1,6 @@
 function PopularDestinationCard({pic,name,stays}) {
     return (
-        <div className="relative size-32 sm:size-36 md:size-40 lg:size-44 shrink-0 rounded-xl overflow-hidden transition duration-300 hover:scale-105 ">
+        <div className="relative size-36 sm:size-40 md:size-44 lg:size-48 lg:w-[200px] shrink-0 rounded-xl overflow-hidden transition duration-300 hover:scale-105 ">
 
             <img
                 src={pic}

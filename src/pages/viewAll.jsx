@@ -19,13 +19,21 @@ const viewAll = () => {
     const valueFromSortDropDown=useCallback((value)=>{
        setSortValue(value)
     },[])
-
+    const viewMoreHeaderData={
+        navLink:"stays",
+        title:"Featured stays",
+        description:"Handpicked stays with amazing views, top ratings",
+        descriptionBr:" and unforgettable experiences.",
+        badgeIcon:"fa-solid fa-shield-halved",
+        badgeTitle:"Best Price Guarantee",
+        badgeDescription:"Found a lower price? We'll match it."
+    }
     return (
         <main className="min-h-screen bg-[#F8F7F3] px-6 py-10 text-[#18201D] lg:px-12">
             <section className=" topSec mx-auto max-w-[1440px] mb-3">
 
 
-                <ViewMoreHeader />
+                <ViewMoreHeader {...viewMoreHeaderData} />
                 <FilterBar destinationSend={valueFromFilterDestination} />
                 <SortDropDown sortValueSend={valueFromSortDropDown} />
 
