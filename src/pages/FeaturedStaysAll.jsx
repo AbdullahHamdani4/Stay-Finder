@@ -1,4 +1,5 @@
 import React, { useCallback, useEffect, useState } from 'react'
+import { Outlet } from 'react-router-dom'
 import "../App.css"
 import { MappedCards } from "../components/featuredStays.jsx"
 import ViewMoreHeader from '../components/viewMoreHeader.jsx'
@@ -43,6 +44,7 @@ const viewAll = () => {
             <div className='cards'>
                 <MappedCards filter={destination} sort={sortValue} wrapVal={"flex-wrap"} gapVal={6} justifyVal={"justify-center"} />
             </div>
+            
         </main>
     )
 }

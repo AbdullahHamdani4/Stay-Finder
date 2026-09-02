@@ -1,8 +1,11 @@
-function FeaturedStaysCard({image,name,badge,rating,reviews,location,beds,baths,guests,price}) {
+import { Navigate, useNavigate } from "react-router-dom";
+
+function FeaturedStaysCard({id,image,name,badge,rating,reviews,location,beds,baths,guests,price}) {
+   const navigate = useNavigate();
     return (
      
-  
-    <div className="w-64 shrink-0 overflow-hidden rounded-xl bg-white shadow-sm transition duration-300 hover:scale-105">
+    <div className="w-64 shrink-0 overflow-hidden rounded-xl bg-white shadow-sm transition duration-300 hover:scale-105" onClick={()=>{ navigate(`/FeaturedStaysAll/${id}`);
+    }}>
       <div className="relative h-36 w-full">
         <img
           src={image}
