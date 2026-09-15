@@ -9,6 +9,7 @@ import './App.css'
 import { BrowserRouter, Route, Routes,} from "react-router-dom"
  import { useState } from "react"
 import ProtectedRoute from "./components/ProtectedRoute.jsx"
+import Scroll from "./components/Scroll.jsx"
 import { User } from "./Context/UserContext.jsx"
 function App() {
     const {user}=User()
@@ -19,6 +20,7 @@ function App() {
   <>
   
     <BrowserRouter>
+    <Scroll/>
   <Routes>
    
     {user?<Route path="/" element={<Home/>}></Route>:<Route path="/" element={<Login2/>}></Route>}
