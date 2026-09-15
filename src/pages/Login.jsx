@@ -1,5 +1,5 @@
  import Logo from '../components/logo'
-import Input from '../components/Input'
+import Input from '../components/AuthenticationInput'
 import Logologin from "../assets/logoLogin.png"
 import { useState } from 'react'
 import { Navigate, useNavigate, useNavigation } from 'react-router-dom'
