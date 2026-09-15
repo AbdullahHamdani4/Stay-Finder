@@ -80,6 +80,7 @@ export default function Login2() {
         if (error.code === "auth/account-exists-with-different-credential")
         toast("Account exist with different credentials");
       else toast("Something went wrong");
+      console.log(error)
     }
   };
 
